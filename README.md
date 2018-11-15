@@ -4,7 +4,7 @@ http://localhost:9000 - config-server
 
 https://github.com/svlugovoy/configs-2018 - config folder under git
 
-http://localhost:9100 - discovery-service
+http://localhost:8761 - discovery-service
 
 http://localhost:9500 - hello-service
 
