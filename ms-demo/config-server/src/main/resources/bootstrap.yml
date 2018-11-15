@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
