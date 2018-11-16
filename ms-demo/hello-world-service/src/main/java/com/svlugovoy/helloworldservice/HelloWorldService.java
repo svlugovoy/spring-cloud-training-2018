@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(value = "hello-service")
+@FeignClient(value = "hello-service", fallback = HelloServiceFallbackImpl.class)
 @Component
 public interface HelloWorldService {
 
