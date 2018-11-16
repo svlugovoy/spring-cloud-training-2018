@@ -1,0 +1,14 @@
+zuul:
+  ignoredServices: '*'
+  routes:
+    hello:
+      path: /h/**
+      serviceId: hello-service
+      stripPrefix: true
+    accounts:
+      path: /hw/**
+      serviceId: hello-world-service
+      stripPrefix: true
+    get:
+      path: /get/**
+      url: http://localhost:9500/hello/GET123
